@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.MainActivity" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="8dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/disclaimer"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_regular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="-16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bola1_home" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="184dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="-40dp"
+        android:layout_marginBottom="-32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bola3_home" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="-32dp"
+        android:layout_marginBottom="-32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:srcCompat="@drawable/bola2_home" />
+
+    <ImageView
+        android:id="@+id/iv_sejarah"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="40dp"
+        android:elevation="4dp"
+        android:shadowColor="#020202"
+        android:shadowDx="7"
+        android:shadowDy="7"
+        android:shadowRadius="10"
+        app:layout_constraintBottom_toTopOf="@+id/iv_soal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/custom_button" />
+
+    <TextView
+        android:id="@+id/tv_materi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/materi_bekam"
+        android:elevation="8dp"
+        android:textSize="18sp"
+        android:textColor="@color/fonts"
+        android:fontFamily="@font/poppins_bold"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_sejarah"
+        app:layout_constraintEnd_toEndOf="@+id/iv_sejarah"
+        app:layout_constraintStart_toStartOf="@+id/iv_sejarah"
+        app:layout_constraintTop_toTopOf="@+id/iv_sejarah" />
+
+    <ImageView
+        android:id="@+id/iv_soal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:shadowColor="#6A020202"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/custom_button" />
+
+    <TextView
+        android:id="@+id/tv_soal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/soal_bekam"
+        android:textSize="18sp"
+        android:textColor="@color/fonts"
+        android:fontFamily="@font/poppins_bold"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_soal"
+        app:layout_constraintEnd_toEndOf="@+id/iv_soal"
+        app:layout_constraintStart_toStartOf="@+id/iv_soal"
+        app:layout_constraintTop_toTopOf="@+id/iv_soal" />
+
+    <ImageView
+        android:id="@+id/iv_tentang"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="56dp"
+        android:shadowColor="#6A020202"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_soal"
+        app:srcCompat="@drawable/custom_button" />
+
+    <TextView
+        android:id="@+id/tv_tentang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tentang_aplikasi"
+        android:textSize="18sp"
+        android:textColor="@color/fonts"
+        android:fontFamily="@font/poppins_bold"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_tentang"
+        app:layout_constraintEnd_toEndOf="@+id/iv_tentang"
+        app:layout_constraintStart_toStartOf="@+id/iv_tentang"
+        app:layout_constraintTop_toTopOf="@+id/iv_tentang" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--<Button-->
+<!--android:id="@+id/btn_materi"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginStart="56dp"-->
+<!--android:layout_marginTop="100dp"-->
+<!--android:layout_marginEnd="56dp"-->
+<!--android:background="@drawable/custom_button"-->
+<!--android:elevation="4dp"-->
+<!--android:textColor="@color/fonts"-->
+<!--android:textSize="18sp"-->
+<!--android:textStyle="bold"-->
+<!--android:text="@string/materi_bekam"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/imageView3" />-->
+
+<!--<Button-->
+<!--android:id="@+id/btn_soal"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginStart="56dp"-->
+<!--android:layout_marginTop="40dp"-->
+<!--android:layout_marginEnd="56dp"-->
+<!--android:background="@drawable/custom_button"-->
+<!--android:elevation="4dp"-->
+<!--android:textColor="@color/fonts"-->
+<!--android:textSize="18sp"-->
+<!--android:textStyle="bold"-->
+<!--android:text="@string/soal_bekam"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintHorizontal_bias="0.0"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/btn_materi" />-->
+
+<!--<Button-->
+<!--android:id="@+id/btn_tentang"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginStart="56dp"-->
+<!--android:layout_marginTop="40dp"-->
+<!--android:layout_marginEnd="56dp"-->
+<!--android:background="@drawable/custom_button"-->
+<!--android:elevation="4dp"-->
+<!--android:textColor="@color/fonts"-->
+<!--android:textSize="18sp"-->
+<!--android:textStyle="bold"-->
+<!--android:text="@string/tentang_aplikasi"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintHorizontal_bias="0.0"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/btn_soal" />-->

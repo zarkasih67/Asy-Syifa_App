@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".ui.materi.MateriActivity">
+
+    <ImageView
+        android:id="@+id/ivMateriBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="-16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bola_materi" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="-40dp"
+        android:layout_marginBottom="-32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bola_materi2" />
+
+    <ImageView
+        android:id="@+id/iv_sejarah"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="40dp"
+        android:shadowColor="#6A020202"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        app:layout_constraintBottom_toTopOf="@+id/iv_perlengkapan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/custom_button" />
+
+    <TextView
+        android:id="@+id/tv_sejarah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sejarah Bekam"
+        android:textSize="18sp"
+        android:textColor="@color/fonts"
+        android:fontFamily="@font/poppins_bold"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_sejarah"
+        app:layout_constraintEnd_toEndOf="@+id/iv_sejarah"
+        app:layout_constraintStart_toStartOf="@+id/iv_sejarah"
+        app:layout_constraintTop_toTopOf="@+id/iv_sejarah" />
+
+    <ImageView
+        android:id="@+id/iv_perlengkapan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:shadowColor="#6A020202"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40"
+        app:srcCompat="@drawable/custom_button" />
+
+    <TextView
+        android:id="@+id/tv_soal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Perlengkapan Bekam"
+        android:textColor="@color/fonts"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_perlengkapan"
+        app:layout_constraintEnd_toEndOf="@+id/iv_perlengkapan"
+        app:layout_constraintStart_toStartOf="@+id/iv_perlengkapan"
+        app:layout_constraintTop_toTopOf="@+id/iv_perlengkapan" />
+
+    <ImageView
+        android:id="@+id/iv_titk_bekam"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="56dp"
+        android:shadowColor="#6A020202"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_perlengkapan"
+        app:srcCompat="@drawable/custom_button" />
+
+    <TextView
+        android:id="@+id/tv_titk_bekam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Titik-Titik Bekam"
+        android:textColor="@color/fonts"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_titk_bekam"
+        app:layout_constraintEnd_toEndOf="@+id/iv_titk_bekam"
+        app:layout_constraintStart_toStartOf="@+id/iv_titk_bekam"
+        app:layout_constraintTop_toTopOf="@+id/iv_titk_bekam" />
+
+    <ImageView
+        android:id="@+id/iv_larangan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="56dp"
+        android:shadowColor="#6A020202"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_titk_bekam"
+        app:srcCompat="@drawable/custom_button" />
+
+    <TextView
+        android:id="@+id/tv_larangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Larangan Berbekam"
+        android:textColor="@color/fonts"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_larangan"
+        app:layout_constraintEnd_toEndOf="@+id/iv_larangan"
+        app:layout_constraintStart_toStartOf="@+id/iv_larangan"
+        app:layout_constraintTop_toTopOf="@+id/iv_larangan" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:srcCompat="@drawable/custom_circle_white" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="-32dp"
+        android:layout_marginBottom="-32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:srcCompat="@drawable/bola3_home" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/as_syifa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

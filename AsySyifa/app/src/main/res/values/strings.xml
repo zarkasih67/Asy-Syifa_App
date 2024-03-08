@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Asy-Asyifa\'</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="materi_bekam">Materi Bekam</string>
+    <string name="soal_bekam">Soal Bekam</string>
+    <string name="sudah_siap">Apa Anda Sudah Siap Untuk Menjawab Soal?</string>
+
+    <string name="tentang">
+        Aplikasi Pengenalan bekam adalah sebuah aplikasi media pembelajaran yang dibuat untuk memperkenalkan metode pengobatan bekam sebagai salah satu metode pengobatan alternatif warisan Nabi Muhammad SAW.
+    </string>
+    <string name="tentang_sumber">
+        ~Sumber Buku : Panduan Pengajaran Bekam\n\n
+        ~Penulis : Pengurus Pusat PBI, Majelis Syuro PBI
+    </string>
+    <string name="emote_type">Emote Type</string>
+    <string name="kamu_dapat_nilai_sempurna">Kamu Dapat Nilai Sempurna!</string>
+    <string name="kamu_dapat_kembali_untuk_menguji_ulang">Kamu dapat kembali untuk menguji ulang</string>
+
+    <!--    reward result-->
+    <string name="score1">Woowww! Nilaimu sempurna, mari lanjutkan! </string>
+    <string name="score2">Yeahh! Kamu hampir mendapat nilai sempurna!</string>
+    <string name="score3">Nilaimu cukup bagus kok, mari kita tingkatkan!</string>
+    <string name="score4">Jangan sedih ya, belajar lagi yuk!</string>
+    <string name="score5">Hai! Jangan terlalu murung, mari belajar lagi</string>
+    <string name="score_else">Maybe there was a mistake, try again next time</string>
+    <string name="disclaimer">Disclaimer : Materi pada aplikasi ini hanya sebatas media pengenalan. Jangan dicoba tanpa didampingi oleh ahli</string>
+</resources>
